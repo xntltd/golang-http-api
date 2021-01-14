@@ -16,11 +16,11 @@ To update to the latest version, use
 $ go get -u github.com/xntltd/golang-http-api
 ```
 
-## Developing golang-http-api
+### Developing golang-http-api
 
 If you wish to work on golang-http-api itself, you will first need Go installed and configured on your machine (version 1.14+ is preferred, but the minimum required version is 1.8).
 
-Next, using Git, clone the repository via git clone 
+Next, using Git, clone the repository via ```git clone``` command 
 ```
 git clone https://github.com/xntltd/golang-http-api.git
 ```
@@ -83,4 +83,10 @@ Try to get account summary:
 	}
 ```
 See more code in ```examples.go``` file
-All HTTP API methods declared in ```api.go``` file
+
+
+All public HTTP API methods declared in ```api.go``` file
+
+### License
+
+Released under the [GNU GPL License](https://github.com/xntltd/golang-http-api/blob/main/LICENSE)

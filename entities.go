@@ -1,4 +1,4 @@
-package main
+package httplib
 
 // NewUserAccounts constructor
 func NewUserAccounts() *UserAccounts { return new(UserAccounts) }
