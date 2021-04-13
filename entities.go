@@ -487,11 +487,11 @@ type OrderSentTypeV3 struct {
 	Side           string `json:"side"`
 	Quantity       string `json:"quantity"`
 	Duration       string `json:"duration"`
-	ClientTag      string `json:"clientTag"`
-	OcoGroup       string `json:"ocoGroup"`
-	IfDoneParentID string `json:"ifDoneParentId"`
+	ClientTag      string `json:"clientTag,omitempty"`
+	OcoGroup       string `json:"ocoGroup,omitempty"`
+	IfDoneParentID string `json:"ifDoneParentId,omitempty"`
 	OrderType      string `json:"orderType"`
-	TakeProfit     string `json:"takeProfit"`
-	StopLoss       string `json:"stopLoss"`
+	TakeProfit     string `json:"takeProfit,omitempty"`
+	StopLoss       string `json:"stopLoss,omitempty"`
 	SymbolID       string `json:"symbolId"`
 }
