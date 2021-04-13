@@ -164,7 +164,6 @@ type SymbolOptionDataV3 struct {
 // SymbolV1 model
 type SymbolV1 struct {
 	SymbolOptionData `json:"optionData"`
-	I18n             string  `json:"i18n"`
 	Name             string  `json:"name"`
 	Description      string  `json:"description"`
 	Country          string  `json:"country"`
@@ -184,7 +183,6 @@ type SymbolsV1 []SymbolV1
 // SymbolV2 model
 type SymbolV2 struct {
 	SymbolOptionDataV2 `json:"optionData"`
-	I18n               string  `json:"i18n"`
 	Name               string  `json:"name"`
 	Description        string  `json:"description"`
 	Country            string  `json:"country"`
@@ -204,7 +202,6 @@ type SymbolsV2 []SymbolV2
 // SymbolV3 model
 type SymbolV3 struct {
 	SymbolOptionDataV3 `json:"optionData"`
-	I18n               string  `json:"i18n"`
 	Name               string  `json:"name"`
 	Description        string  `json:"description"`
 	Country            string  `json:"country"`
@@ -215,6 +212,7 @@ type SymbolV3 struct {
 	Ticker             string  `json:"ticker"`
 	Expiration         float64 `json:"expiration"`
 	Group              string  `json:"group"`
+	UnderlyingID       string  `json:"underlyingSymbolId`
 }
 
 // SymbolsV3 model
@@ -423,6 +421,9 @@ type TransactionV1 struct {
 	Sum           float64 `json:"sum"`
 	SymbolID      string  `json:"symbolId"`
 	AccountID     string  `json:"accountId"`
+	OrderID       string  `json:"orderId"`
+	OrderPos      int     `json:"orderPos"`
+	UUID          string  `json:"uuid"`
 }
 
 // TransactionsV1 model
@@ -443,6 +444,9 @@ type TransactionV3 struct {
 	AccountID     string  `json:"accountId"`
 	Timestamp     int     `json:"timestamp"`
 	Sum           float64 `json:"sum"`
+	OrderID       string  `json:"orderId"`
+	OrderPos      int     `json:"orderPos"`
+	UUID          string  `json:"uuid"`
 }
 
 // TransactionsV3 model
